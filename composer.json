@@ -21,12 +21,12 @@
     },
     "autoload": {
         "psr-4": {
-            "Sideso\\Formatters\\": "src"
+            "Sideso\\SpanishFormatters\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Sideso\\Formatters\\Tests\\": "tests"
+            "Sideso\\SpanishFormatters\\Tests\\": "tests"
         }
     },
     "scripts": {
