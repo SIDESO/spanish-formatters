@@ -1,6 +1,6 @@
 <?php
 
-namespace Sideso\Formatters;
+namespace Sideso\SpanishFormatters;
 
 use Carbon\Carbon;
 

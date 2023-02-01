@@ -1,6 +1,6 @@
 <?php
 
-namespace Sideso\Formatters;
+namespace Sideso\SpanishFormatters;
 
 use NumberFormatter;
 
@@ -30,7 +30,7 @@ class Number
     }
 
     /**
-     * Format a number to spell
+     * Format a number to letters
      * 
      * @param int|float $number Number to format
      * @param string $locale Locale code
@@ -39,7 +39,7 @@ class Number
      * 
      * @throws \InvalidArgumentException
      */
-    public static function toSpell($number, $locale = 'es_CO')
+    public static function toLetters($number, $locale = 'es_CO')
     {
         return self::toFormat($number, $locale, NumberFormatter::SPELLOUT);
     }
@@ -92,7 +92,7 @@ class Number
     }
     
     /**
-     * Format a number to ordinal spell in spanish
+     * Format a number to ordinal letters in spanish
      * 
      * @param int|float $number Number to format
      * @param string $suffix Suffix to ordinal
@@ -101,7 +101,7 @@ class Number
      * 
      * @throws \InvalidArgumentException
      */
-    public static function toSpanishOrdinalSpell($number, $suffix = 'o')
+    public static function toOrdinalLetters($number, $suffix = 'o')
     {
         if(! is_numeric($number)){
             throw new \InvalidArgumentException('The number must be numeric');
