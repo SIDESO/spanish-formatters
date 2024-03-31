@@ -16,10 +16,10 @@ class Date
     public static function getDays(bool $short = false): array
     {
         if ($short) {
-            return ['Lun','Mar','Mié','Jue','Vie','Sáb','Dom'];
+            return ['Dom', 'Lun', 'Mar', 'Mié', 'Jue', 'Vie', 'Sáb'];
         }
 
-        return ['Lunes', 'Martes', 'Miércoles', 'Jueves', 'Viernes', 'Sábado', 'Domingo'];
+        return ['Domingo', 'Lunes', 'Martes', 'Miércoles', 'Jueves', 'Viernes', 'Sábado'];
     }
 
     /**
@@ -32,7 +32,7 @@ class Date
      */
     public static function getDay(Carbon $date, bool $short = false): string
     {
-        return self::getDays($short)[$date->dayOfWeek - 1];
+        return self::getDays($short)[$date->dayOfWeek];
     }
 
     /**
